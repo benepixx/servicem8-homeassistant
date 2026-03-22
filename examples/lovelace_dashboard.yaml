@@ -1,1 +1,44 @@
+title: ServiceM8 Dashboard
+views:
+  - title: Overview
+    path: overview
+    cards:
+      - type: entities
+        title: Revenue
+        entities:
+          - entity: sensor.servicem8_dashboard_revenue_today
+          - entity: sensor.servicem8_dashboard_revenue_this_week
+          - entity: sensor.servicem8_dashboard_revenue_this_month
+          - entity: sensor.servicem8_dashboard_revenue_rolling_30d
+          - entity: sensor.servicem8_dashboard_revenue_12m_moving_average
+      - type: entities
+        title: Jobs
+        entities:
+          - entity: sensor.servicem8_dashboard_jobs_created_today
+          - entity: sensor.servicem8_dashboard_jobs_completed_today
+          - entity: sensor.servicem8_dashboard_jobs_open_now
+          - entity: sensor.servicem8_dashboard_jobs_overdue_now
+          - entity: sensor.servicem8_dashboard_jobs_unscheduled_now
+      - type: entities
+        title: Sales
+        entities:
+          - entity: sensor.servicem8_dashboard_quotes_open_now
+          - entity: sensor.servicem8_dashboard_quotes_open_value_now
+          - entity: sensor.servicem8_dashboard_quotes_created_last_30d
+          - entity: sensor.servicem8_dashboard_quotes_accepted_last_30d
+          - entity: sensor.servicem8_dashboard_quote_conversion_rate_30d
+      - type: entities
+        title: Operations
+        entities:
+          - entity: sensor.servicem8_dashboard_time_logged_this_week_hours
+          - entity: sensor.servicem8_dashboard_revenue_per_logged_hour_30d
+          - entity: sensor.servicem8_dashboard_schedule_utilisation_today
+          - entity: sensor.servicem8_dashboard_days_of_work_scheduled_ahead
+      - type: entities
+        title: Alerts
+        entities:
+          - entity: binary_sensor.servicem8_dashboard_jobs_overdue_present
+          - entity: binary_sensor.servicem8_dashboard_invoices_overdue_present
+          - entity: binary_sensor.servicem8_dashboard_schedule_over_capacity_today
+          - entity: binary_sensor.servicem8_dashboard_backlog_above_threshold
 
