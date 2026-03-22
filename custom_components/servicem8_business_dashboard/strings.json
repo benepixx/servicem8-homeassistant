@@ -1,0 +1,46 @@
+{
+  "title": "ServiceM8 Business Dashboard",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to ServiceM8",
+        "description": "Create a read-only business dashboard using your ServiceM8 private API key.",
+        "data": {
+          "api_key": "API key",
+          "base_url": "Base URL",
+          "scan_interval_minutes": "Refresh interval (minutes)",
+          "include_staff": "Create per-staff sensors",
+          "include_history": "Create longer-term trend sensors",
+          "include_alerts": "Create alert-style binary sensors",
+          "include_customers": "Create customer sensors",
+          "include_schedule": "Create scheduling sensors",
+          "trend_months": "Monthly history sensors"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the ServiceM8 API.",
+      "invalid_auth": "Authentication failed. Check the API key.",
+      "unknown": "Unexpected error. Check the Home Assistant logs."
+    },
+    "abort": {
+      "already_configured": "This ServiceM8 account is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "ServiceM8 dashboard options",
+        "data": {
+          "scan_interval_minutes": "Refresh interval (minutes)",
+          "include_staff": "Create per-staff sensors",
+          "include_history": "Create longer-term trend sensors",
+          "include_alerts": "Create alert-style binary sensors",
+          "include_customers": "Create customer sensors",
+          "include_schedule": "Create scheduling sensors",
+          "trend_months": "Monthly history sensors"
+        }
+      }
+    }
+  }
+}

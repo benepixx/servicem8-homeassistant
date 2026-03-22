@@ -1,0 +1,12 @@
+{
+  "domain": "servicem8_business_dashboard",
+  "name": "ServiceM8 Business Dashboard",
+  "version": "1.0.0",
+  "documentation": "https://github.com/example/servicem8-business-dashboard",
+  "issue_tracker": "https://github.com/example/servicem8-business-dashboard/issues",
+  "codeowners": ["@chatgpt"],
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "integration_type": "service"
+}
